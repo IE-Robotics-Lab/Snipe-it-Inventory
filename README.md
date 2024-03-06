@@ -1,4 +1,7 @@
 # Snipe-it-Inventory
+
+![flow](http://www.plantuml.com/plantuml/png/VP71RiCW38RlFCL_J5-XFQnJJvDscBGdeCHPF150sAd6suyKQOcYQ2TRy7tu5xwAsgppvCspCUVFfLoCuG7Tcu0L5caimivwnFitENqvGKSAw0h9oG0hEWlrc1FYWpAK9zgZmFdchGWF1LPmYq7coTuzNPwNeZ7LXhmGkX2RiKaIG3zAELYFdXxi3jxVyXoKldA5DIuOKkR9vlAFkyltwXo9n5nQl4soO_w3CgUHwiW_8VGyc0DrDqY4j3ghiVv6ErZrdVhEZe9GbPlGy6ijorP_0G00)
+
 Documentation &amp; instrunctions for Lba Snipe-it inventory
 
 by Gregorio Orlando

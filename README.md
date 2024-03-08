@@ -4,11 +4,94 @@
 
 Documentation &amp; instrunctions for Lba Snipe-it inventory
 
-by Gregorio Orlando
+by Gringo & Daniel
+
+
+# Table of Contents
+
+1. [Snipe-it-Inventory](#snipe-it-inventory)
+   - [Documentation & Instructions for Lba Snipe-it inventory](#documentation--instrunctions-for-lba-snipe-it-inventory)
+      - [1. ASSETS](#1-assets)
+      - [2. LICENSES](#2-licenses)
+      - [3. ACCESSORIES](#3-accessories)
+      - [4. CONSUMABLES](#4-consumables)
+      - [5. COMPONENTS](#5-components)
+      - [6. PEOPLE](#6-people)
+      - [7. Settings](#7-settings)
+         - [7.1 Categories](#71-categories)
+         - [7.2 Assets Models](#72-assets-models)
+         - [7.3 Locations](#73-locations)
+      - [8. QR code](#8-qr-code)
+   - [Importing Asset and More](#importing-asset-and-more)
+   - [Usage](#usage)
+      - [Identify Classification](#identify-classification)
+         - [ES 1](#es-1)
+         - [ES 2](#es-2)
+         - [ES 3](#es-3)
+      - [User experience](#user-experience)
+
+
+
+[Presentation link](https://www.canva.com/design/DAF-ptVJ3W0/7udp7TozioKCdRgNQnhQdg/edit?utm_content=DAF-ptVJ3W0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+[AI assisten for Snipe-IT](https://www.phind.com/search?home=true)
 
 ## Documentation For Snipe-it Graphic Interface
 
-### Categories
+### 1. ASSETS
+Items of value that an organization owns and uses for its operations. They can include a wide range of items.
+Assets can contain other categories such as licenses, accessories, consumables, and components.
+
+Examples:
+- Laptops
+- Desktops
+- Servers
+- Mobile phones
+
+### 2. LICENSES
+Digital or physical permissions that grant the user the right to use software or services.
+
+Examples:
+- Microsoft Office licenses
+- Adobe Creative
+
+### 3. ACCESSORIES
+Peripherals or additional hardware that are not integral to the main function of a device but are necessary for its operation. They are typically used alongside devices for enhanced functionality or user experience.
+
+Examples:
+- Mice
+- Keyboards
+- Monitors
+
+### 4. CONSUMABLES
+Reusable items. Unlike accessories, consumables are used up and need to be replaced once they are depleted. subset of assets but are specifically focused on items that are used up and need to be tracked and replaced.
+
+Examples:
+- Toner cartridges
+- Ink cartridges
+- Paper
+
+### 5. COMPONENTS
+Parts of a larger asset or system that are essential for its operation but are not the main device themselves.
+
+Examples:
+- CPUs in computers
+- RAM sticks
+- Hard drives
+
+### 6. PEOPLE
+Users or employees who are assigned to assets or are responsible for their use and maintenance. This category is crucial for tracking who is using what and ensuring that assets are allocated and used appropriately.
+
+Examples:
+- Edu
+- Botzo team
+
+### 7. Settings
+
+Under settings in dashbar you can find 3 main aspects/fields that allow for a structured approach to asset management, ensuring that your inventory is well-organized, easily tracked, and maintained.
+
+#### 7.1 Categories
+Used to group assets, licenses, accessories, consumables, and components into logical groups based on their function, type, etc.. Example: hardware, software
 
 Categories are used by both assets and accessories. Categories describe the general type of asset or accessory, such as “wireless keyboards”, “laptops”, and so on.
 
@@ -16,30 +99,14 @@ Categories are used by both assets and accessories. Categories describe the gene
 
 Every asset and accessory needs to belong to a category, so you’ll need to set these up before adding assets.
 
-#### Create Category:
-
-1. Click on the gear icon to open Settings
-2. Click on the Categories to get to the main Categories section
-3. Create your new Categories _(which you will need to select when you are creating your assets)_.
-
 >Alternative, you can create Categories on the fly if you import via CSV.
 
-## Asset Tags
+#### 7.2 Assets Models
+Asset Models act as templates for creating new assets. They define common attributes that are shared by all assets of a particular type, such as the manufacturer, category, and custom fields.
 
-unique identifier for assets within your system. Each one must be unique, and is often used in conjunction with Asset Labels. They identify each unique piece of hardware so that you know which specific device it is.
+--> STANDARDIZATION
 
-For users who don't need asset labels, the unique serial number of each device is often used as the asset tag, or you can turn on auto-incrementing asset tags in *Admin > Settings*, which will generate a unique asset tag for you when you create new assets.
-
-## Asset Labels
-
-Go to any of the asset listing views (Ready to Deploy, Deployed, etc) and use the checkboxes in the leftmost column to select the assets you'd like to generate labels for. Once you've finished your selection, scroll down to the bottom of the asset listing table, and select "Generate Labels" from the dropdown list.
-
-Then you can print these and have them next to the hardware.
-
-## Asset Models
-
-Every asset needs an asset model, so setting these up next will help you start adding assets. Asset models can be things like the make and model of a laptop or desktop machine
->ES: Apple 13″ Retina
+Every asset needs an asset model, so setting these up next will help you start adding assets. Asset models can be things like the make and model of a laptop or desktop machine.
 
 When you create new assets, you’ll select whichever asset model makes sense.
 
@@ -47,7 +114,10 @@ Asset models are important because they carry certain attributes which are inher
 
 Individual assets can be marked as requestable, and asset models can also be marked as requestable, which allows users within Snipe-IT to request a specific asset, or any asset that matches the asset model they require.
 
-## Barcode & QRcode
+#### 7.3 Locations
+Specify the shelf in the lab. A user can navigate the lab as an IP address, going to shelf 2, row 4 column 5 (2.4.5).
+
+### 8. QR code
 
 QR codes, when scanned on a mobile device using a QR scanner app, will open the asset details page of the asset whose QR code was scanned.
 
@@ -66,7 +136,7 @@ The importer reads the first row of the CSV file to determine what each column i
 Please make sure there are no leading or trailing spaces in the header column names, and no blan
 
 ### Sample Asset Import
->FullName,Email,Username,itemName,Category,ModelName,Manufacturer,Model Number,SerialNnumber,AssetTag,Location,Notes,Purchase Date,PurchaseCost,Company,Status,Warranty,Supplier
+>Full Name,Email,Username,item Name,Category,Model Name,Manufacturer,Model Number,Serial number,Asset Tag,Location,Notes,Purchase Date,Purchase Cost,Company,Status,Warranty,Supplier
 
 | Field             | Example Data         | Required | Notes                                                                                                                    |
 |-------------------|----------------------|----------|--------------------------------------------------------------------------------------------------------------------------|
@@ -174,3 +244,48 @@ Please make sure there are no leading or trailing spaces in the header column na
 
 >ES: _Karalee,Carroll,kcarroll5@devhub.com,kcarroll5,Huaidian,86-(303)287-0739,Civil Engineer,1530903416,Schuster LLC_
 
+
+
+
+## Usage
+
+### Identify Classification
+
+#### ES 1
+Example 1: A Laptop
+1. Is it a physical object? Yes, a laptop is a physical object.
+2. Is it used up over time? No, while a laptop may wear out over time, it is not 'consumed' like printer paper or ink.
+3. Is it an external device? No, a laptop is a standalone device, not an external addition to another device.
+4. Therefore, the laptop is classified as an Asset.
+#### ES 2
+Example 2: Ink Cartridge
+1. Is it a physical object? Yes, an ink cartridge is a physical object.
+2. Is it used up over time? Yes, an ink cartridge is used up as it prints and needs to be replaced.
+3. Therefore, the ink cartridge is classified as a Consumable.
+#### ES 3
+Example: A Raspberry Pi
+1. Is it a physical object? Yes, a Raspberry Pi is a physical object.
+2. Is it used up over time? No, a Raspberry Pi does not get consumed like printer paper or ink; it may wear out but is not used up in the traditional sense of a consumable.
+3. Is it an external device? No, while it can be part of a larger system, a Raspberry Pi is typically a standalone device or a core component for various projects, not an external addition like a peripheral.
+4. Therefore, the Raspberry Pi is classified as an Asset.
+
+### User experience
+
+1. Create your profile (or the profile of your team)
+2. Check-out items:
+
+    a. Navigate to the item in the Snipe-IT inventory.
+
+    b. Select "Checkout" and choose the user to whom the item is being checked out.
+
+    c. Optionally, specify the expected return date and any additional notes.
+
+    d. Confirm the action to check out the item.
+
+3. Check-in items:
+    a. Navigate to the item in the Snipe-IT inventory.
+    b. Select "Checkin" and choose the user to whom the item is being returned.
+    c. Optionally, provide any notes about the condition of the item or the reason for the check-in.
+    d. Confirm the action to check in the item.
+4. Search items
+5. Create user inventory
